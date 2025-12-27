@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧑‍💻 Multi-Coder-Sync
 
-## Getting Started
+**Multi-Coder-Sync** is a **real-time collaborative coding platform** built with **Next.js, TypeScript, and TailwindCSS**. It allows multiple users to work together inside shared coding workspaces, manage project files and folders, and run code in **5+ programming languages** using the **Judge0 API** — all inside a beautiful Monaco-powered editor (the same editor used in VS Code).
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 💻 Real-Time Collaboration
+- Multiple users can edit and collaborate together
+- Live updates without refresh
+- Room-based collaboration
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🗂 File & Folder Management
+- Create / rename / delete folders
+- Create / delete files inside folders
+- Nested folder support
+- Smooth file-switching UX
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ⚡ Code Execution (Judge0 API)
+Run code securely in multiple languages:
+- C
+- C++
+- Java
+- Python
+- JavaScript  
+(and more depending on your configuration)
 
-## Learn More
+### ✨ Developer-Friendly Editor
+- Monaco Editor (VS Code editor engine)
+- Syntax highlighting
+- Modern UI powered by TailwindCSS
+- Responsive and clean design
 
-To learn more about Next.js, take a look at the following resources:
+### 🔐 User System
+- Login / session support
+- Separate user workspaces
+- Secure operations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 Tech Stack
 
-## Deploy on Vercel
+| Layer | Technology |
+|------|------------|
+| Framework | Next.js |
+| Language | TypeScript |
+| Styling | TailwindCSS |
+| Editor | Monaco Editor |
+| Backend | Next.js API Routes |
+| DB | MongoDB / Mongoose *(if applicable)* |
+| Code Execution | Judge0 API |
+| Realtime *(if used)* | WebSockets / Pusher / Socket.io *(adjust if needed)* |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
