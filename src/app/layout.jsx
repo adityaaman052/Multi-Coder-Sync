@@ -1,0 +1,33 @@
+import { Roboto } from "next/font/google";
+import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import { PlaygroundProvider } from "@/context/playgroundProvider";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <title>CodingCorner | Collaborate in Real-Time, Build Together</title>
+
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+
+        <link rel="icon" href="/icon.svg" />
+      </head>
+
+      <body className={`${roboto.className} antialiased`}>
+        <PlaygroundProvider>
+          <Toaster />
+          {children}
+        </PlaygroundProvider>
+      </body>
+    </html>
+  );
+}
